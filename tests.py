@@ -8,3 +8,10 @@ class UserModelCase(unittest.TestCase):
         u = User(username='karthikrk1')
         self.assertTrue(u.username=='karthikrk1')
         self.assertFalse(u.username=='samy1')
+
+
+
+# Main method for tests.py
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
