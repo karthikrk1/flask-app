@@ -1,6 +1,7 @@
 import unittest
 from app import app, db
-from app.models import User
+from app.models import User, Post
+from datetime import datetime, timedelta
 
 
 class UserModelCase(unittest.TestCase):
@@ -52,7 +53,39 @@ class UserModelCase(unittest.TestCase):
         self.assertEqual(u1.followed.count(), 0)
         self.assertEqual(u2.followers.count(), 0)
 
+    def test_follow_posts(self):
+        # Create dummy users
+        u1 = User(username='john', email='john@example.com')
+        u2 = User(username='susan', email='susan@example.com')
+        u3 = User(username='doe', email='doe@example.com')
+        u4 = User(username='kek', email='kek@example.com')
+        db.session.add_all([u1,u2,u3,u4])
+        # create four posts
+        now = datetime.utcnow()
+        p1 = Post(body='post from john', author=u1, timestamp = now + timedelta(seconds=1))
+        p2 = Post(body='post from susan', author=u2, timestamp = now + timedelta(seconds=2))
+        p3 = Post(body='post from doe', author=u3, timestamp = now + timedelta(seconds=3))
+        p4 = Post(body='post from kek', author=u4, timestamp = now + timedelta(seconds=4))
+        db.session.add_all([p1,p2,p3,p4])
 
+        db.session.commit()
+
+        # set up followers
+        u1.follow(u2)
+        u1.follow(u4)
+        u2.follow(u3)
+        u3.follow(u4)
+        db.session.commit()
+
+        # check the followed post
+        f1 = u1.followed_posts().all()
+        f2 = u2.followed_posts().all()
+        f3 = u3.followed_posts().all()
+        f4 = u4.followed_posts().all()
+        self.assertEqual(f1, [p4, p2, p1])
+        self.assertEqual(f2, [p3, p2])
+        self.assertEqual(f3, [p4, p3])
+        self.assertEqual(f4, [p4])
 
 # Main method for tests.py
 
