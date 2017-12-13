@@ -7,17 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-12 17:48-0600\n"
+"POT-Creation-Date: 2017-12-12 21:23-0600\n"
 "PO-Revision-Date: 2017-12-12 18:19-0600\n"
-"Language-Team: ta <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
-"X-Generator: Poedit 2.0.5\n"
 "Last-Translator: \n"
 "Language: ta\n"
+"Language-Team: ta <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
 
 #: app/__init__.py:21
 msgid "Please log in to access this page."
@@ -91,52 +90,60 @@ msgstr "மீண்டும் கடவுச்சொல்லை உள்�
 msgid "Password Reset Request"
 msgstr "கடவுச்சொல் மீட்டமை கோரிக்கை"
 
-#: app/routes.py:27
+#: app/routes.py:33
 msgid "Your post is now live!!"
 msgstr "உங்கள் இடுகை இப்போது பதிவேற்றப்பட்டது !!"
 
-#: app/routes.py:46
+#: app/routes.py:52
 msgid "Invalid username or password"
 msgstr "தவறான பயனர் பெயர் அல்லது கடவுச்சொல்"
 
-#: app/routes.py:72
+#: app/routes.py:78
 msgid "Congratulations! You are all set to use our app"
 msgstr "வாழ்த்துக்கள்! நீங்கள் எங்கள் பயன்பாட்டை பயன்படுத்த தயார்"
 
-#: app/routes.py:98
+#: app/routes.py:104
 msgid "Your changes have been saved"
 msgstr "உங்கள் மாற்றங்கள் சேமிக்கப்பட்டன"
 
-#: app/routes.py:103 app/templates/edit_profile.html:5
+#: app/routes.py:109 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "சுயவிவரத்தைத் திருத்தவும்"
 
-#: app/routes.py:111 app/routes.py:127
+#: app/routes.py:117 app/routes.py:133
 #, python-format
 msgid "User %(username)s not found!!"
 msgstr "புனைப்பெயர் %(username)s கிடைக்கவில்லை"
 
-#: app/routes.py:114 app/routes.py:130
+#: app/routes.py:120 app/routes.py:136
 msgid "You cannot follow yourself!!"
 msgstr "நீங்கள் உங்களைப் பின்தொடர முடியாது !!"
 
-#: app/routes.py:118
+#: app/routes.py:124
 #, python-format
 msgid "You are now following %(username)s!!"
 msgstr "நீங்கள் இப்போது %(username)s அவர்களின் இடுகைகளைப் பின்பற்றுகிறீர்கள் !!"
 
-#: app/routes.py:134
+#: app/routes.py:140
 #, python-format
 msgid "You are no longer following %(username)s!!"
 msgstr "நீங்கள் இப்போது %(username)s  அவர்களை பின்தொடரவில்லை !!"
 
-#: app/routes.py:159
+#: app/routes.py:165
 msgid "Check your email for link to reset password!!"
 msgstr "கடவுச்சொல்லை மீட்டமைக்க இணைப்புக்கு உங்கள் மின்னஞ்சலை பாருங்கள்!"
 
-#: app/routes.py:175
+#: app/routes.py:181
 msgid "Your password has been reset!"
 msgstr "உங்களுடைய கடவுச்சொல் மாற்றப்பட்டது!"
+
+#: app/translate.py:9
+msgid "Error: The translator service is not configured"
+msgstr "பிழை: மொழிபெயர்ப்பாளர் சேவை உள்ளமைக்கப்படவில்லை"
+
+#: app/translate.py:13
+msgid "Error: The translator service failed!!"
+msgstr "பிழை: மொழிபெயர்ப்பாளர் சேவை தோல்வியடைந்தது"
 
 #: app/templates/404.html:4
 msgid "File Not Found"
@@ -153,6 +160,15 @@ msgstr "இது சங்கடமாக உள்ளது! - எதிர்
 #: app/templates/500.html:5
 msgid "The admin has been notified. Sorry for the inconvenience!"
 msgstr "நிர்வாகி அறிவிக்கப்பட்டுள்ளார். சிரமத்திற்கு வருந்துகிறோம்!"
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s சொல்கிறார் %(when)s"
+
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr "மொழிபெயர்"
 
 #: app/templates/base.html:4
 msgid "Welcome to Flask App!"
@@ -177,6 +193,10 @@ msgstr "சுய விவரம்"
 #: app/templates/base.html:29
 msgid "Logout"
 msgstr "வெளியேறு"
+
+#: app/templates/base.html:66
+msgid "Error: Could not contact server."
+msgstr "பிழை: சேவையகத்தை தொடர்புகொள்ள முடியவில்லை"
 
 #: app/templates/index.html:4
 #, python-format
@@ -236,3 +256,4 @@ msgstr "பின்பற்றவும்"
 #: app/templates/user.html:19
 msgid "Unfollow"
 msgstr "பின்பற்ற வேண்டாம்"
+
