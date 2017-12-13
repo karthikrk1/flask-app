@@ -1,0 +1,238 @@
+# Tamil translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-12-12 17:48-0600\n"
+"PO-Revision-Date: 2017-12-12 18:19-0600\n"
+"Language-Team: ta <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Language: ta\n"
+
+#: app/__init__.py:21
+msgid "Please log in to access this page."
+msgstr "இத்தளத்தை அணுக நீங்கள் ஒரு புனைப்பெயர், கடவுச்சொல்லும் வழங்க வேண்டும்."
+
+#: app/email.py:20
+msgid "[Flask-App] Reset Password"
+msgstr "கடவுச்சொல்லை மீட்டமைக்கவும்"
+
+#: app/forms.py:8 app/forms.py:15 app/forms.py:33
+msgid "Username"
+msgstr "புனைப்பெயர்"
+
+#: app/forms.py:9 app/forms.py:17 app/forms.py:58
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: app/forms.py:10
+msgid "Remember Me"
+msgstr "நினைவில் வைத்து கொள்ளுங்கள்,"
+
+#: app/forms.py:11 app/templates/login.html:5
+msgid "Log In"
+msgstr "உள்நுழை"
+
+#: app/forms.py:16 app/forms.py:53
+msgid "Email"
+msgstr "மின்னஞ்சல்"
+
+#: app/forms.py:18
+msgid "Repeat Password"
+msgstr "மீண்டும் கடவுச்சொல்லை உள்ளிடவும்"
+
+#: app/forms.py:19 app/templates/register.html:5
+msgid "Register"
+msgstr "பதிவுசெய்"
+
+#: app/forms.py:24
+msgid "Username already Exists! Please try a different username"
+msgstr "புனைப்பெயர் உபயோகத்தில் உள்ளது, மற்றொரு புனைப்பெயரை முயற்சி செய்யவும்."
+
+#: app/forms.py:29
+msgid "Email exists! Sign In with the password"
+msgstr "மின்னஞ்சல் உபயோகத்தில் உள்ளது! உள்நுழை"
+
+#: app/forms.py:34
+msgid "About Me"
+msgstr "என்னை பற்றி"
+
+#: app/forms.py:35 app/forms.py:49
+msgid "Submit"
+msgstr "சமர்ப்பிக்க"
+
+#: app/forms.py:44
+msgid "Username already in use! Please choose a new one"
+msgstr "புனைப்பெயர் முன்னரே உபயோகத்தில் உள்ளது! புதிய ஒன்றைத் தேர்வு செய்க"
+
+#: app/forms.py:48
+msgid "Say something"
+msgstr "ஏதாவது கூறுங்கள்"
+
+#: app/forms.py:54 app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "கடவுச்சொல்லை மீட்டமைக்க"
+
+#: app/forms.py:59
+msgid "Re Enter Password"
+msgstr "மீண்டும் கடவுச்சொல்லை உள்ளிடவும்"
+
+#: app/forms.py:60
+msgid "Password Reset Request"
+msgstr "கடவுச்சொல் மீட்டமை கோரிக்கை"
+
+#: app/routes.py:27
+msgid "Your post is now live!!"
+msgstr "உங்கள் இடுகை இப்போது பதிவேற்றப்பட்டது !!"
+
+#: app/routes.py:46
+msgid "Invalid username or password"
+msgstr "தவறான பயனர் பெயர் அல்லது கடவுச்சொல்"
+
+#: app/routes.py:72
+msgid "Congratulations! You are all set to use our app"
+msgstr "வாழ்த்துக்கள்! நீங்கள் எங்கள் பயன்பாட்டை பயன்படுத்த தயார்"
+
+#: app/routes.py:98
+msgid "Your changes have been saved"
+msgstr "உங்கள் மாற்றங்கள் சேமிக்கப்பட்டன"
+
+#: app/routes.py:103 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "சுயவிவரத்தைத் திருத்தவும்"
+
+#: app/routes.py:111 app/routes.py:127
+#, python-format
+msgid "User %(username)s not found!!"
+msgstr "புனைப்பெயர் %(username)s கிடைக்கவில்லை"
+
+#: app/routes.py:114 app/routes.py:130
+msgid "You cannot follow yourself!!"
+msgstr "நீங்கள் உங்களைப் பின்தொடர முடியாது !!"
+
+#: app/routes.py:118
+#, python-format
+msgid "You are now following %(username)s!!"
+msgstr "நீங்கள் இப்போது %(username)s அவர்களின் இடுகைகளைப் பின்பற்றுகிறீர்கள் !!"
+
+#: app/routes.py:134
+#, python-format
+msgid "You are no longer following %(username)s!!"
+msgstr "நீங்கள் இப்போது %(username)s  அவர்களை பின்தொடரவில்லை !!"
+
+#: app/routes.py:159
+msgid "Check your email for link to reset password!!"
+msgstr "கடவுச்சொல்லை மீட்டமைக்க இணைப்புக்கு உங்கள் மின்னஞ்சலை பாருங்கள்!"
+
+#: app/routes.py:175
+msgid "Your password has been reset!"
+msgstr "உங்களுடைய கடவுச்சொல் மாற்றப்பட்டது!"
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr "கோப்பு கிடைக்கவில்லை"
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "Back"
+msgstr "பின்னால்"
+
+#: app/templates/500.html:4
+msgid "Well this is embarrassing! - An Unexpected Error has occurred"
+msgstr "இது சங்கடமாக உள்ளது! - எதிர்பாராத பிழை ஏற்பட்டது"
+
+#: app/templates/500.html:5
+msgid "The admin has been notified. Sorry for the inconvenience!"
+msgstr "நிர்வாகி அறிவிக்கப்பட்டுள்ளார். சிரமத்திற்கு வருந்துகிறோம்!"
+
+#: app/templates/base.html:4
+msgid "Welcome to Flask App!"
+msgstr "Flask App வரவேற்கிறது"
+
+#: app/templates/base.html:21
+msgid "Home"
+msgstr "முகப்பு"
+
+#: app/templates/base.html:22
+msgid "Explore"
+msgstr "ஆராய"
+
+#: app/templates/base.html:26
+msgid "Login"
+msgstr "உள் நுழை"
+
+#: app/templates/base.html:28
+msgid "Profile"
+msgstr "சுய விவரம்"
+
+#: app/templates/base.html:29
+msgid "Logout"
+msgstr "வெளியேறு"
+
+#: app/templates/index.html:4
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "வணக்கம், %(username)s"
+
+#: app/templates/index.html:16 app/templates/user.html:31
+msgid "Newer Posts"
+msgstr "புதிய பதிவுகள்"
+
+#: app/templates/index.html:21 app/templates/user.html:36
+msgid "Older Posts"
+msgstr "பழைய பதிவுகள்"
+
+#: app/templates/login.html:12
+msgid "New User?"
+msgstr "புதிய பயனர்?"
+
+#: app/templates/login.html:12
+msgid "Click Here to Register!"
+msgstr "பதிவு செய்ய இங்கே கிளிக் செய்யவும்"
+
+#: app/templates/login.html:13
+msgid "Forgot Password"
+msgstr "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
+
+#: app/templates/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "கடவுச்சொல்லை மீட்டமைக்க"
+
+#: app/templates/user.html:8
+msgid "User"
+msgstr "பயனர்"
+
+#: app/templates/user.html:11
+msgid "Last Seen On"
+msgstr "கடைசியாக பார்த்தார்"
+
+#: app/templates/user.html:13
+#, python-format
+msgid "%(count)d followers"
+msgstr "%(count)d பின்பற்றுபவர்கள்"
+
+#: app/templates/user.html:13
+#, python-format
+msgid "%(count)d following"
+msgstr "%(count)d பின்பற்றுதல்"
+
+#: app/templates/user.html:15
+msgid "Edit Your Profile"
+msgstr "உங்கள் சுயவிவரம் திருத்தவும்"
+
+#: app/templates/user.html:17
+msgid "Follow"
+msgstr "பின்பற்றவும்"
+
+#: app/templates/user.html:19
+msgid "Unfollow"
+msgstr "பின்பற்ற வேண்டாம்"
