@@ -29,7 +29,7 @@ The Flask-App can work in the following languages as of v1.0:
 ## Support for international Dates and Times
 
 Since time is not a common theme across different parts of the world, the server is set to take updates in UTC
-(Coordinated Universal Time) and [momentjs] (https://momentjs.com/) is used to convert this into different timezones
+(Coordinated Universal Time) and [momentjs](https://momentjs.com/) is used to convert this into different timezones
 based on the browser's
 current configuration.
 
@@ -49,7 +49,7 @@ can be uploaded to the user's page and can be found in the index page of the use
 
 ## Full Text Search
 
-Searching for a post is also possible through the use of [Elasticsearch] (https://www.elastic.co/).
+Searching for a post is also possible through the use of [Elasticsearch](https://www.elastic.co/).
 
 Elasticsearch is a open source search engine based out of Lucene and supports indexing of documents and querying from
 the index. The posts made by the user is always indexed through DB events which keep the indexes updated with a User's
@@ -65,11 +65,11 @@ this awesome feature of Flask to create a good experience for the users.
 
 Flask supports various extensions to create great apps. The various Flask extensions used:
 
-*flask-sqlalchemy : An ORM for Flask which can be used to connect to various DB engines
-*flask-moment: A Flask based Python wrapper for momentjs support.
-*flask-babel: A Flask based extension of pybabel that is used for I18N and L10N
-*flask-migrate: A Flask based version of Alembic to support migrations to DB
-*flask-login: A Flask extension to support User logins
-*flask-mail: A Flask extension to support Email services
-*flask-Bootstrap: A Flask based wrapper for bootstrap to create awesome UI
-*flask-WTF: A Flask extension for creating web forms
+* flask-sqlalchemy : An ORM for Flask which can be used to connect to various DB engines
+* flask-moment: A Flask based Python wrapper for momentjs support.
+* flask-babel: A Flask based extension of pybabel that is used for I18N and L10N
+* flask-migrate: A Flask based version of Alembic to support migrations to DB
+* flask-login: A Flask extension to support User logins
+* flask-mail: A Flask extension to support Email services
+* flask-Bootstrap: A Flask based wrapper for bootstrap to create awesome UI
+* flask-WTF: A Flask extension for creating web forms
