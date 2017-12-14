@@ -65,11 +65,11 @@ this awesome feature of Flask to create a good experience for the users.
 
 Flask supports various extensions to create great apps. The various Flask extensions used:
 
-flask-sqlalchemy : An ORM for Flask which can be used to connect to various DB engines
-flask-moment: A Flask based Python wrapper for momentjs support.
-flask-babel: A Flask based extension of pybabel that is used for I18N and L10N
-flask-migrate: A Flask based version of Alembic to support migrations to DB
-flask-login: A Flask extension to support User logins
-flask-mail: A Flask extension to support Email services
-flask-Bootstrap: A Flask based wrapper for bootstrap to create awesome UI
-flask-WTF: A Flask extension for creating web forms
+*flask-sqlalchemy : An ORM for Flask which can be used to connect to various DB engines
+*flask-moment: A Flask based Python wrapper for momentjs support.
+*flask-babel: A Flask based extension of pybabel that is used for I18N and L10N
+*flask-migrate: A Flask based version of Alembic to support migrations to DB
+*flask-login: A Flask extension to support User logins
+*flask-mail: A Flask extension to support Email services
+*flask-Bootstrap: A Flask based wrapper for bootstrap to create awesome UI
+*flask-WTF: A Flask extension for creating web forms
