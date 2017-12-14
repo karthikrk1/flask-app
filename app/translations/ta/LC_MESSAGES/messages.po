@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-12 21:23-0600\n"
+"POT-Creation-Date: 2017-12-13 18:28-0600\n"
 "PO-Revision-Date: 2017-12-12 18:19-0600\n"
 "Last-Translator: \n"
 "Language: ta\n"
@@ -18,47 +18,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: app/__init__.py:21
+#: app/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "இத்தளத்தை அணுக நீங்கள் ஒரு புனைப்பெயர், கடவுச்சொல்லும் வழங்க வேண்டும்."
 
-#: app/email.py:20
-msgid "[Flask-App] Reset Password"
-msgstr "கடவுச்சொல்லை மீட்டமைக்கவும்"
-
-#: app/forms.py:8 app/forms.py:15 app/forms.py:33
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/forms.py:8 app/forms.py:15
+#: app/forms.py:33 app/main/forms.py:10
 msgid "Username"
 msgstr "புனைப்பெயர்"
 
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:41
 #: app/forms.py:9 app/forms.py:17 app/forms.py:58
 msgid "Password"
 msgstr "கடவுச்சொல்"
 
-#: app/forms.py:10
+#: app/auth/forms.py:11 app/forms.py:10
 msgid "Remember Me"
 msgstr "நினைவில் வைத்து கொள்ளுங்கள்,"
 
-#: app/forms.py:11 app/templates/login.html:5
+#: app/auth/forms.py:12 app/forms.py:11 app/templates/auth/login.html:5
 msgid "Log In"
 msgstr "உள்நுழை"
 
-#: app/forms.py:16 app/forms.py:53
+#: app/auth/forms.py:17 app/auth/forms.py:36 app/forms.py:16 app/forms.py:53
 msgid "Email"
 msgstr "மின்னஞ்சல்"
 
-#: app/forms.py:18
+#: app/auth/forms.py:20 app/forms.py:18
 msgid "Repeat Password"
 msgstr "மீண்டும் கடவுச்சொல்லை உள்ளிடவும்"
 
-#: app/forms.py:19 app/templates/register.html:5
+#: app/auth/forms.py:22 app/forms.py:19 app/templates/auth/register.html:5
 msgid "Register"
 msgstr "பதிவுசெய்"
 
-#: app/forms.py:24
+#: app/auth/forms.py:27 app/forms.py:24
 msgid "Username already Exists! Please try a different username"
 msgstr "புனைப்பெயர் உபயோகத்தில் உள்ளது, மற்றொரு புனைப்பெயரை முயற்சி செய்யவும்."
 
-#: app/forms.py:29
+#: app/auth/forms.py:32 app/forms.py:29
 msgid "Email exists! Sign In with the password"
 msgstr "மின்னஞ்சல் உபயோகத்தில் உள்ளது! உள்நுழை"
 
@@ -66,76 +64,30 @@ msgstr "மின்னஞ்சல் உபயோகத்தில் உள�
 msgid "About Me"
 msgstr "என்னை பற்றி"
 
-#: app/forms.py:35 app/forms.py:49
+#: app/forms.py:35 app/forms.py:49 app/main/forms.py:13 app/main/forms.py:28
 msgid "Submit"
 msgstr "சமர்ப்பிக்க"
 
-#: app/forms.py:44
+#: app/forms.py:44 app/main/forms.py:23
 msgid "Username already in use! Please choose a new one"
 msgstr "புனைப்பெயர் முன்னரே உபயோகத்தில் உள்ளது! புதிய ஒன்றைத் தேர்வு செய்க"
 
-#: app/forms.py:48
+#: app/forms.py:48 app/main/forms.py:27
 msgid "Say something"
 msgstr "ஏதாவது கூறுங்கள்"
 
-#: app/forms.py:54 app/templates/reset_password_request.html:5
+#: app/auth/forms.py:37 app/forms.py:54
+#: app/templates/auth/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "கடவுச்சொல்லை மீட்டமைக்க"
 
-#: app/forms.py:59
+#: app/auth/forms.py:43 app/forms.py:59
 msgid "Re Enter Password"
 msgstr "மீண்டும் கடவுச்சொல்லை உள்ளிடவும்"
 
-#: app/forms.py:60
+#: app/auth/forms.py:45 app/forms.py:60
 msgid "Password Reset Request"
 msgstr "கடவுச்சொல் மீட்டமை கோரிக்கை"
-
-#: app/routes.py:33
-msgid "Your post is now live!!"
-msgstr "உங்கள் இடுகை இப்போது பதிவேற்றப்பட்டது !!"
-
-#: app/routes.py:52
-msgid "Invalid username or password"
-msgstr "தவறான பயனர் பெயர் அல்லது கடவுச்சொல்"
-
-#: app/routes.py:78
-msgid "Congratulations! You are all set to use our app"
-msgstr "வாழ்த்துக்கள்! நீங்கள் எங்கள் பயன்பாட்டை பயன்படுத்த தயார்"
-
-#: app/routes.py:104
-msgid "Your changes have been saved"
-msgstr "உங்கள் மாற்றங்கள் சேமிக்கப்பட்டன"
-
-#: app/routes.py:109 app/templates/edit_profile.html:5
-msgid "Edit Profile"
-msgstr "சுயவிவரத்தைத் திருத்தவும்"
-
-#: app/routes.py:117 app/routes.py:133
-#, python-format
-msgid "User %(username)s not found!!"
-msgstr "புனைப்பெயர் %(username)s கிடைக்கவில்லை"
-
-#: app/routes.py:120 app/routes.py:136
-msgid "You cannot follow yourself!!"
-msgstr "நீங்கள் உங்களைப் பின்தொடர முடியாது !!"
-
-#: app/routes.py:124
-#, python-format
-msgid "You are now following %(username)s!!"
-msgstr "நீங்கள் இப்போது %(username)s அவர்களின் இடுகைகளைப் பின்பற்றுகிறீர்கள் !!"
-
-#: app/routes.py:140
-#, python-format
-msgid "You are no longer following %(username)s!!"
-msgstr "நீங்கள் இப்போது %(username)s  அவர்களை பின்தொடரவில்லை !!"
-
-#: app/routes.py:165
-msgid "Check your email for link to reset password!!"
-msgstr "கடவுச்சொல்லை மீட்டமைக்க இணைப்புக்கு உங்கள் மின்னஞ்சலை பாருங்கள்!"
-
-#: app/routes.py:181
-msgid "Your password has been reset!"
-msgstr "உங்களுடைய கடவுச்சொல் மாற்றப்பட்டது!"
 
 #: app/translate.py:9
 msgid "Error: The translator service is not configured"
@@ -145,28 +97,71 @@ msgstr "பிழை: மொழிபெயர்ப்பாளர் சேவ
 msgid "Error: The translator service failed!!"
 msgstr "பிழை: மொழிபெயர்ப்பாளர் சேவை தோல்வியடைந்தது"
 
-#: app/templates/404.html:4
-msgid "File Not Found"
-msgstr "கோப்பு கிடைக்கவில்லை"
+#: app/auth/email.py:8
+msgid "[Flask App] Reset Your Password"
+msgstr "[Flask App] உங்கள் கடவுச்சொல்லை மீட்டமைக்க"
 
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "Back"
-msgstr "பின்னால்"
+#: app/auth/routes.py:20
+msgid "Invalid username or password"
+msgstr "தவறான பயனர் பெயர் அல்லது கடவுச்சொல்"
 
-#: app/templates/500.html:4
-msgid "Well this is embarrassing! - An Unexpected Error has occurred"
-msgstr "இது சங்கடமாக உள்ளது! - எதிர்பாராத பிழை ஏற்பட்டது"
+#: app/auth/routes.py:46
+msgid "Congratulations! You are all set to use our app"
+msgstr "வாழ்த்துக்கள்! நீங்கள் எங்கள் பயன்பாட்டை பயன்படுத்த தயார்"
 
-#: app/templates/500.html:5
-msgid "The admin has been notified. Sorry for the inconvenience!"
-msgstr "நிர்வாகி அறிவிக்கப்பட்டுள்ளார். சிரமத்திற்கு வருந்துகிறோம்!"
+#: app/auth/routes.py:61
+msgid "Check your email for link to reset password!!"
+msgstr "கடவுச்சொல்லை மீட்டமைக்க இணைப்புக்கு உங்கள் மின்னஞ்சலை பாருங்கள்!"
+
+#: app/auth/routes.py:78
+msgid "Your password has been reset!"
+msgstr "உங்களுடைய கடவுச்சொல் மாற்றப்பட்டது!"
+
+#: app/main/forms.py:11
+msgid "About me"
+msgstr "என்னை பற்றி"
+
+#: app/main/routes.py:35
+msgid "Your post is now live!!"
+msgstr "உங்கள் இடுகை இப்போது பதிவேற்றப்பட்டது !!"
+
+#: app/main/routes.py:86
+msgid "Your changes have been saved"
+msgstr "உங்கள் மாற்றங்கள் சேமிக்கப்பட்டன"
+
+#: app/main/routes.py:91 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "சுயவிவரத்தைத் திருத்தவும்"
+
+#: app/main/routes.py:100 app/main/routes.py:116
+#, python-format
+msgid "User %(username)s not found!!"
+msgstr "புனைப்பெயர் %(username)s கிடைக்கவில்லை"
+
+#: app/main/routes.py:103
+msgid "You cannot follow yourself!!"
+msgstr "நீங்கள் உங்களைப் பின்தொடர முடியாது !!"
+
+#: app/main/routes.py:107
+#, python-format
+msgid "You are now following %(username)s!!"
+msgstr "நீங்கள் இப்போது %(username)s அவர்களின் இடுகைகளைப் பின்பற்றுகிறீர்கள் !!"
+
+#: app/main/routes.py:119
+msgid "You cannot unfollow yourself!!"
+msgstr "உங்கள் இடுகைகளை குழுவிலக செய்ய முடியாது"
+
+#: app/main/routes.py:123
+#, python-format
+msgid "You are no longer following %(username)s!!"
+msgstr "நீங்கள் இப்போது %(username)s  அவர்களை பின்தொடரவில்லை !!"
 
 #: app/templates/_post.html:14
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s சொல்கிறார் %(when)s"
 
-#: app/templates/_post.html:24
+#: app/templates/_post.html:20
 msgid "Translate"
 msgstr "மொழிபெயர்"
 
@@ -211,22 +206,6 @@ msgstr "புதிய பதிவுகள்"
 msgid "Older Posts"
 msgstr "பழைய பதிவுகள்"
 
-#: app/templates/login.html:12
-msgid "New User?"
-msgstr "புதிய பயனர்?"
-
-#: app/templates/login.html:12
-msgid "Click Here to Register!"
-msgstr "பதிவு செய்ய இங்கே கிளிக் செய்யவும்"
-
-#: app/templates/login.html:13
-msgid "Forgot Password"
-msgstr "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
-
-#: app/templates/reset_password.html:5
-msgid "Reset Your Password"
-msgstr "கடவுச்சொல்லை மீட்டமைக்க"
-
 #: app/templates/user.html:8
 msgid "User"
 msgstr "பயனர்"
@@ -256,4 +235,39 @@ msgstr "பின்பற்றவும்"
 #: app/templates/user.html:19
 msgid "Unfollow"
 msgstr "பின்பற்ற வேண்டாம்"
+
+#: app/templates/auth/login.html:12
+msgid "New User?"
+msgstr "புதிய பயனர்?"
+
+#: app/templates/auth/login.html:12
+msgid "Click Here to Register!"
+msgstr "பதிவு செய்ய இங்கே கிளிக் செய்யவும்"
+
+#: app/templates/auth/login.html:13
+msgid "Forgot Password"
+msgstr "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
+
+#: app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr "கடவுச்சொல்லை மீட்டமைக்க"
+
+#: app/templates/errors/404.html:4
+msgid "File Not Found"
+msgstr "கோப்பு கிடைக்கவில்லை"
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "பின்னால்"
+
+#: app/templates/errors/500.html:4
+msgid "Well this is embarrassing! - An Unexpected Error has occurred"
+msgstr "இது சங்கடமாக உள்ளது! - எதிர்பாராத பிழை ஏற்பட்டது"
+
+#: app/templates/errors/500.html:5
+msgid "The admin has been notified. Sorry for the inconvenience!"
+msgstr "நிர்வாகி அறிவிக்கப்பட்டுள்ளார். சிரமத்திற்கு வருந்துகிறோம்!"
+
+#~ msgid "[Flask-App] Reset Password"
+#~ msgstr "கடவுச்சொல்லை மீட்டமைக்கவும்"
 
