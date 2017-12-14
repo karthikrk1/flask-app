@@ -25,7 +25,7 @@ The features of v1.0 of this app include the following:
 In order to run the app the following prerequisites are needed to be installed.
 
 Python 2.7.x or Python 3.6.x
-Elasticsearch - [Installation Guide] (https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html)
+Elasticsearch - [Installation Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html)
 
 #### Start Elasticsearch:
 
