@@ -37,4 +37,5 @@ visitor==0.1.3
 Werkzeug==0.13
 WTForms==2.1
 gunicorn
-psycopg2
+# needed only for Heroku deployment
+#psycopg2
