@@ -103,3 +103,6 @@ ENV/
 
 # PyCharm files
 .idea/
+
+# Vagrant Files
+.vagrant/
