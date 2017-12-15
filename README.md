@@ -24,8 +24,8 @@ The features of v1.0 of this app include the following:
 
 In order to run the app the following prerequisites are needed to be installed.
 
-Python 2.7.x or Python 3.6.x
-Elasticsearch - [Installation Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html)
+* Python 2.7.x or Python 3.6.x
+* Elasticsearch - [Installation Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html)
 
 #### Start Elasticsearch:
 
@@ -61,7 +61,7 @@ This command creates a python virtual environment under the flask-app folder.
 ```
 source <virtual-env-name>/bin/activate
 ```
-This step is mandatory if you wish to keep your root installation of Python from being clean. The packages that will be
+This step is mandatory if you wish to keep your root installation of Python from being overwritten. The packages that will be
 installed as part of the next step will only exist within the virtual environment and not in Python installation's root
 folder
 
@@ -71,7 +71,7 @@ folder
 pip install -r requirements.txt
 ```
 
-7. Set some environment variables
+6. Set some environment variables
 
 ```
 export FLASK_APP=flask_app.py
@@ -93,7 +93,7 @@ export MAIL_USERNAME=<your-gmail-username>
 export MAIL_PASSWORD=<your-gmail-password>
 ```
 
-8. Running the app
+7. Running the app
 
 ```
 flask run
