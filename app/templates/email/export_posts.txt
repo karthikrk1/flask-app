@@ -1,0 +1,6 @@
+Dead {{ user.username }},
+
+Please find attached the archive of your posts that you requested.
+
+Sincerely,
+The Flask App Team

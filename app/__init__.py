@@ -1,5 +1,6 @@
 import os
 import logging
+import rq
 from flask import Flask, request, current_app
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
@@ -11,6 +12,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
 from elasticsearch import Elasticsearch
+from redis import Redis
 
 
 db=SQLAlchemy()
@@ -38,6 +40,10 @@ def create_app(config_class=Config):
 
     # Build Elasticsearch
     app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URI']]) if app.config['ELASTICSEARCH_URI'] else None
+
+    # Redis
+    app.redis = Redis.from_url(app.config['REDIS_URI'])
+    app.task_queue = rq.Queue('flask_app-tasks', connection=app.redis)
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)

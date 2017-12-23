@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-23 11:58-0600\n"
+"POT-Creation-Date: 2017-12-23 14:45-0600\n"
 "PO-Revision-Date: 2017-12-12 18:19-0600\n"
 "Last-Translator: \n"
 "Language: ta\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: app/__init__.py:20
+#: app/__init__.py:22
 msgid "Please log in to access this page."
 msgstr "இத்தளத்தை அணுக நீங்கள் ஒரு புனைப்பெயர், கடவுச்சொல்லும் வழங்க வேண்டும்."
 
@@ -116,8 +116,7 @@ msgstr "ஏதாவது கூறுங்கள்"
 
 #: app/main/forms.py:43
 msgid "Message"
-msgstr "செய்தி
-"
+msgstr "செய்த"
 
 #: app/main/forms.py:44
 msgid "Send"
@@ -162,9 +161,17 @@ msgstr "நீங்கள் இப்போது %(username)s  அவர்�
 msgid "Your message has been sent!"
 msgstr "உங்கள் செய்தி அனுப்பப்பட்டது"
 
-#: app/main/routes.py:168 app/templates/user.html:24
+#: app/main/routes.py:168
 msgid "Send Message"
 msgstr "செய்தி அனுப்ப"
+
+#: app/main/routes.py:202
+msgid "An export task is currently in progress"
+msgstr "ஒரு ஏற்றுமதி தற்போது இயங்குகிறது"
+
+#: app/main/routes.py:204
+msgid "Exporting posts..."
+msgstr "பதிவுகள் ஏற்றுமதி செய்யப்படுகின்றன"
 
 #: app/templates/_post.html:16
 #, python-format
@@ -203,7 +210,7 @@ msgstr "சுய விவரம்"
 msgid "Logout"
 msgstr "வெளியேறு"
 
-#: app/templates/base.html:84
+#: app/templates/base.html:96
 msgid "Error: Could not contact server."
 msgstr "பிழை: சேவையகத்தை தொடர்புகொள்ள முடியவில்லை"
 
@@ -212,11 +219,11 @@ msgstr "பிழை: சேவையகத்தை தொடர்புகொ
 msgid "Hi, %(username)s!"
 msgstr "வணக்கம், %(username)s"
 
-#: app/templates/index.html:16 app/templates/user.html:38
+#: app/templates/index.html:16
 msgid "Newer Posts"
 msgstr "புதிய பதிவுகள்"
 
-#: app/templates/index.html:21 app/templates/user.html:43
+#: app/templates/index.html:21
 msgid "Older Posts"
 msgstr "பழைய பதிவுகள்"
 
@@ -245,39 +252,27 @@ msgstr "அடுத்த முடிவுகள்"
 msgid "Send Message to %(recipient)s"
 msgstr "%(recipient)sக்கு செய்தி அனுப்பு"
 
-#: app/templates/user.html:8
-msgid "User"
-msgstr "பயனர்"
+#: app/templates/user_popup.html:14
+msgid "Last Seen on:"
+msgstr "கடைசியாக பார்த்தார்:"
 
-#: app/templates/user.html:11
-msgid "Last Seen On"
-msgstr "கடைசியாக பார்த்தார்"
-
-#: app/templates/user.html:13 app/templates/user_popup.html:19
+#: app/templates/user_popup.html:19
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d பின்பற்றுபவர்கள்"
 
-#: app/templates/user.html:13 app/templates/user_popup.html:20
+#: app/templates/user_popup.html:20
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d பின்பற்றுதல்"
 
-#: app/templates/user.html:15
-msgid "Edit Your Profile"
-msgstr "உங்கள் சுயவிவரம் திருத்தவும்"
-
-#: app/templates/user.html:17 app/templates/user_popup.html:24
+#: app/templates/user_popup.html:24
 msgid "Follow"
 msgstr "பின்பற்றவும்"
 
-#: app/templates/user.html:19 app/templates/user_popup.html:26
+#: app/templates/user_popup.html:26
 msgid "Unfollow"
 msgstr "பின்பற்ற வேண்டாம்"
-
-#: app/templates/user_popup.html:14
-msgid "Last Seen on:"
-msgstr "கடைசியாக பார்த்தார்:"
 
 #: app/templates/auth/login.html:12
 msgid "New User?"
@@ -316,4 +311,13 @@ msgstr "நிர்வாகி அறிவிக்கப்பட்டு�
 
 #~ msgid "About Me"
 #~ msgstr "என்னை பற்றி"
+
+#~ msgid "User"
+#~ msgstr "பயனர்"
+
+#~ msgid "Last Seen On"
+#~ msgstr "கடைசியாக பார்த்தார்"
+
+#~ msgid "Edit Your Profile"
+#~ msgstr "உங்கள் சுயவிவரம் திருத்தவும்"
 
