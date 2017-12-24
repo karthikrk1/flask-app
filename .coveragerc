@@ -1,2 +1,7 @@
 [run]
 source = app
+
+omit =
+    app/cli.py
+    app/tasks.py
+
