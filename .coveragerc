@@ -1,4 +1,2 @@
 [run]
-omit =
-    # Omit /venv/ dir
-    ./venv/*
+source = app
