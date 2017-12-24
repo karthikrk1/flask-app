@@ -1,6 +1,6 @@
 # Flask-App
 
-[![Build Status](https://travis-ci.org/karthikrk1/flask-app.svg?branch=master)](https://travis-ci.org/karthikrk1/flask-app) | [![codecov](https://codecov.io/gh/karthikrk1/flask-app/branch/master/graph/badge.svg)](https://codecov.io/gh/karthikrk1/flask-app)
+[![Build Status](https://travis-ci.org/karthikrk1/flask-app.svg?branch=master)](https://travis-ci.org/karthikrk1/flask-app) [![codecov](https://codecov.io/gh/karthikrk1/flask-app/branch/master/graph/badge.svg)](https://codecov.io/gh/karthikrk1/flask-app)
 
 ## Introduction
 
